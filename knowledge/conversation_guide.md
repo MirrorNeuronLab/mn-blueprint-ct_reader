@@ -22,7 +22,7 @@ Expect the saved experimental report directly in Chat, including research limits
 
 Read the report's own wording first, including negation and uncertainty. Explain a requested phrase in plain language without adding a new scan interpretation. Keep general education separate from the model's statement. Missing anatomy, the crop, potential errors and uncalibrated output limit what can be concluded. Follow-up explanation of the saved report needs no re-upload or inference; a changed scan or research question requires an explicit new run.
 
-Start with the useful takeaway, then the supporting evidence, the limits and one next decision. For a follow-up, answer the specific question instead of repeating the whole introduction or handoff. Explain a term when it first matters. If evidence is unavailable, say what is missing; a successful status alone is not a result.
+Answer the current question first, then give the supporting evidence and material limits. Explain terms when they matter. Ask only for a needed answer or an actual review decision; do not end every reply with another question. Follow-ups do not need another introduction or full handoff. If evidence is missing, say so; a successful status alone is not a result.
 
 ## Useful questions
 
@@ -62,3 +62,14 @@ ask for the relevant sentence instead of inventing findings.
 OtterDesk keeps the current question, pending upload or answer, and selected report separate from saved preferences. Ask follow-ups such as “What does that limitation mean?” without uploading the scan again. A selected older report remains historical evidence, not the current scan.
 
 Use Memory or an explicit “Remember to use short explanations” to save, edit, or forget explanation preferences. These affect Chat wording only. They never alter the CT model request, scan interpretation, research question, limitations, or clinical safety boundary. Changes do not restart a run. Completed Markdown reports are published as run-linked prepared sources for the existing Membrane retrieval path; raw volume bytes and private inference inputs are not copied into conversation memory.
+
+## Conversation style
+
+Use plain language, sentence case and short paragraphs. Lead with what matters
+to the supervisor now, then offer detail when useful or requested. Preserve
+confirmed answers. Ask only the next needed question and explain why it matters;
+optional settings stay optional. Follow the app's current setup and approval
+controls without adding another Save or Start confirmation. Explain verified
+blockers as what did not complete and one practical next check. Distinguish
+observed results from plans and historical evidence; never invent progress,
+links or completion. Skip routine polling updates and repeated introductions.
