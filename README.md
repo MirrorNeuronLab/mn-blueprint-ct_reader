@@ -57,6 +57,8 @@ The CPU workflow worker is separately built through the standard `python_docker`
 
 ## Data and results
 
+Open the CT research report to read the saved model response beside its anatomy, model revision and scan digest. The Coverage tab explains which part of the volume the model interpreted. Simulated runs are labeled in the report.
+
 The runtime stages the selected scan to the execution node. CT bytes are sent only to the selected runtime model endpoint, never to Hugging Face or a public preview site. The desktop preview loads bytes locally in its renderer. Consider all connected runtime nodes part of the data boundary; de-identify scans before upload. No raw volumes, prompts, or reports are logged.
 
 `final_artifact.json` and `report.md` are saved under the SDK-provided run output. They include experimental output, a research-only notice, source SHA-256, selected anatomy, model revision, and explicit limitations. The `conversation_result_text:report.md` capability tells OtterDesk to display the

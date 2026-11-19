@@ -32,6 +32,8 @@ artifact references. Declare `conversation_result_text:report.md` so OtterDesk
 displays the complete saved report as text in Chat after completion, with its
 notice and limitations and no separate open action. Reject malformed volumes, unsupported anatomy, missing GPU capacity, empty answers, model failures, and outputs lacking the research-only marker. Duplicate invocation returns the same saved result and does not re-run inference. A changed input in the same invocation fails.
 
+Publish an optional common-template report at `web/index.html` with a digest-verified `web_ui.json`. Use the exact answer and provenance from the saved research result. Mark simulated output explicitly. The report and the inline Chat text use the same completed inference.
+
 Validate manifest compilation, strict GPU constraints, file limits and gzip behavior, model dispatch, idempotent durable output, and research-only labeling with deterministic tests. A live Docker/GPU smoke test is a deployment gate, not a unit-test requirement. No clinical performance claim is part of acceptance.
 
 ## Limits

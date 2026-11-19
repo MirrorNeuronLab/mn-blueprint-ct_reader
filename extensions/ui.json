@@ -1,8 +1,15 @@
 {
   "$schema": "https://mirrorneuron.io/schemas/blueprint/v1/extensions/ui.schema.json",
+  "web_ui": {
+    "enabled": true,
+    "adapter": "static_html",
+    "kind": "output",
+    "title": "CT research report",
+    "description": "Review experimental wording, selected anatomy, source volume digest and model revision."
+  },
   "setup_guide": {
     "schema": "otterdesk.setup_guide.v1",
-    "introduction": "I'll produce an experimental CT research report and explain its wording and limits; this is not for real diagnosis, treatment or triage. Upload a de-identified .nii or .nii.gz file with +, then choose chest or abdomen; no scan is bundled. Work starts when those inputs are ready and the saved report appears in Chat.",
+    "introduction": "I can walk you through the format of an experimental CT report before you share a scan. To run a research review, upload a de-identified .nii or .nii.gz file with + and choose chest or abdomen. The report is for research use only.",
     "sample": {
       "available": false
     },
@@ -53,7 +60,13 @@
         "description": "Manage explanation preferences in Chat > Memory. Scan inputs and research questions use setup controls."
       }
     ],
-    "prompt_file": "@/payloads/prompts/setup.md"
+    "prompt_file": "@/payloads/prompts/setup.md",
+    "run_guidance": {
+      "on_start": "I’ll prepare the selected scan and anatomy for the research model so its report can be reviewed in context.",
+      "report_ready": "Expand the research report and check its wording and limits alongside the selected anatomy.",
+      "output_ready": "Open report.md to review the experimental wording and its limits alongside the selected anatomy.",
+      "web_ui_ready": "Open the CT research report to check the selected anatomy, model revision and input volume behind the wording."
+    }
   },
   "starter_questions": [
     "What CT file and anatomy choice do you need?",
